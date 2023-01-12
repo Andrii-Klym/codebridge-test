@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+$text-color: #363636;
+$line-color: #eaeaea;
+
+$search-bar-height: 50px;
+$loupe-size: 20px;
+$loupe-y-position: ($search-bar-height - $loupe-size)/2;
+
+%section-title {
+  display: block;
+  font-weight: 600;
+}
+
+body {
+  margin: 0
+}
+
+.home__page {
+  margin: 50px 75px;
+  font-size: 16px;
+  color: $text-color;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.search-bar {
+
+  &__area {
+  box-sizing: border-box;
+  width: 600px;
+  height: 50px;
+  margin-bottom: 40px;
+  padding-left: 60px;
+  padding-right: $loupe-size;
+
+  background: #fff;
+  border: 1px solid #eaeaea;
+  box-sizing: border-box;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  color: black;
+
+  cursor: pointer;
+  background: url(./image/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: $loupe-size $loupe-y-position;
+  }
+
+  &__title {
+    margin: 0 0 10px;
+    @extend %section-title;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+}
+
+.section {
+  &__title {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #eaeaea;
+    @extend %section-title;
+  }
+}
