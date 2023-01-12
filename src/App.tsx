@@ -19,6 +19,7 @@ const App: React.FC<{}> = () => {
       const data = (await getArticles(inputBlog)).data;
       setArticle(data);
     })();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [blogs])
 
   const handleChange = (event: any) => {
