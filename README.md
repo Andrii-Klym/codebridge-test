@@ -1,5 +1,5 @@
 # You can visit the deployed app using this link
-test-task-codebridge.netlify.app
+https://test-task-codebridge.netlify.app/
 
 # Getting Started with Create React App
 
